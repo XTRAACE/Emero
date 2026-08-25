@@ -2,7 +2,7 @@
 
 An intelligent emergency-response platform designed to connect people, emergency vehicles, hospitals, and responders through real-time coordination, location intelligence, and AI-assisted decision support.
 
-🌐 **Live Site:** [krishnabhadran.github.io/emero-website](https://krishnabhadran.github.io/emero-website/)
+🌐 **Live Site:** [KBonDev.github.io/emero-website](https://KBonDev.github.io/emero-website/)
 
 ## About
 
@@ -41,7 +41,7 @@ This is a research prototype. All data shown on the website is demo/sample data 
 **Krishnabhadran K** — Concept, Research & Development
 
 - [Personal Website](https://krishnabhadran.github.io/)
-- [GitHub](https://github.com/KrishnaBhadran)
+- [GitHub](https://github.com/KBonDev)
 
 ## Disclaimer
 

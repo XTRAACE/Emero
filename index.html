@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EMERO — Intelligent Emergency Response Platform. Connecting people, emergency vehicles, hospitals and responders through real-time coordination." />
+  <title>EMERO — Intelligent Emergency Response</title>
+  <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- NAVIGATION -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="EMERO home">
+        <span class="nav__logo-mark">E</span>
+        <span class="nav__logo-text">EMERO</span>
+      </a>
+      <nav class="nav__links" id="navLinks" role="navigation" aria-label="Main navigation">
+        <a href="#platform" class="nav__link">Platform</a>
+        <a href="#how-it-works" class="nav__link">How It Works</a>
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#network" class="nav__link">Emergency Network</a>
+        <a href="#technology" class="nav__link">Technology</a>
+        <a href="#research" class="nav__link">Research</a>
+        <a href="#about" class="nav__link">About</a>
+      </nav>
+      <a href="#demo" class="nav__cta btn btn--primary">View Interactive Demo</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+      <a href="#platform" class="nav__mobile-link">Platform</a>
+      <a href="#how-it-works" class="nav__mobile-link">How It Works</a>
+      <a href="#features" class="nav__mobile-link">Features</a>
+      <a href="#network" class="nav__mobile-link">Emergency Network</a>
+      <a href="#technology" class="nav__mobile-link">Technology</a>
+      <a href="#research" class="nav__mobile-link">Research</a>
+      <a href="#about" class="nav__mobile-link">About</a>
+      <a href="#demo" class="btn btn--primary btn--full">View Interactive Demo</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- HERO -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content" data-animate="fade-up">
+          <span class="hero__badge">Emergency Response Technology</span>
+          <h1 class="hero__title">When Every Second Matters, EMERO Connects the Response.</h1>
+          <p class="hero__subtitle">EMERO is an intelligent emergency-response platform designed to connect people, emergency vehicles, hospitals and responders through real-time coordination, location intelligence and AI-assisted decision support.</p>
+          <div class="hero__actions">
+            <a href="#platform" class="btn btn--primary btn--lg">Explore EMERO</a>
+            <a href="#how-it-works" class="btn btn--outline btn--lg">See How It Works</a>
+          </div>
+        </div>
+        <div class="hero__phone" data-animate="fade-up" data-delay="200">
+          <div class="phone-frame">
+            <div class="phone-frame__notch"></div>
+            <div class="phone-frame__screen">
+              <!-- Map UI -->
+              <div class="mock-map">
+                <svg class="mock-map__svg" viewBox="0 0 300 520" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Map background -->
+                  <rect width="300" height="520" fill="#eef2f7"/>
+                  <!-- Roads -->
+                  <line x1="0" y1="120" x2="300" y2="120" stroke="#d1d9e6" stroke-width="12"/>
+                  <line x1="0" y1="260" x2="300" y2="260" stroke="#d1d9e6" stroke-width="12"/>
+                  <line x1="0" y1="400" x2="300" y2="400" stroke="#d1d9e6" stroke-width="12"/>
+                  <line x1="80" y1="0" x2="80" y2="520" stroke="#d1d9e6" stroke-width="12"/>
+                  <line x1="220" y1="0" x2="220" y2="520" stroke="#d1d9e6" stroke-width="12"/>
+                  <line x1="150" y1="0" x2="150" y2="520" stroke="#c8d1de" stroke-width="8"/>
+                  <!-- Road centers -->
+                  <line x1="0" y1="120" x2="300" y2="120" stroke="#f8fafc" stroke-width="1.5" stroke-dasharray="8,6"/>
+                  <line x1="0" y1="260" x2="300" y2="260" stroke="#f8fafc" stroke-width="1.5" stroke-dasharray="8,6"/>
+                  <line x1="0" y1="400" x2="300" y2="400" stroke="#f8fafc" stroke-width="1.5" stroke-dasharray="8,6"/>
+                  <line x1="80" y1="0" x2="80" y2="520" stroke="#f8fafc" stroke-width="1.5" stroke-dasharray="8,6"/>
+                  <line x1="220" y1="0" x2="220" y2="520" stroke="#f8fafc" stroke-width="1.5" stroke-dasharray="8,6"/>
+                  <!-- Secondary roads -->
+                  <line x1="0" y1="190" x2="300" y2="190" stroke="#dfe6f0" stroke-width="5"/>
+                  <line x1="0" y1="330" x2="300" y2="330" stroke="#dfe6f0" stroke-width="5"/>
+                  <line x1="150" y1="0" x2="150" y2="520" stroke="#dfe6f0" stroke-width="5"/>
+                  <line x1="30" y1="0" x2="30" y2="520" stroke="#dfe6f0" stroke-width="4"/>
+                  <line x1="270" y1="0" x2="270" y2="520" stroke="#dfe6f0" stroke-width="4"/>
+                  <!-- Buildings -->
+                  <rect x="95" y="130" width="45" height="50" rx="3" fill="#d6e0ed" opacity="0.5"/>
+                  <rect x="160" y="130" width="50" height="50" rx="3" fill="#d6e0ed" opacity="0.4"/>
+                  <rect x="95" y="270" width="45" height="50" rx="3" fill="#d6e0ed" opacity="0.4"/>
+                  <rect x="160" y="270" width="50" height="50" rx="3" fill="#d6e0ed" opacity="0.5"/>
+                  <rect x="95" y="410" width="45" height="50" rx="3" fill="#d6e0ed" opacity="0.3"/>
+                  <rect x="160" y="410" width="50" height="50" rx="3" fill="#d6e0ed" opacity="0.4"/>
+                  <!-- Green areas -->
+                  <rect x="10" y="10" width="60" height="100" rx="6" fill="#d4e8d0" opacity="0.4"/>
+                  <rect x="230" y="430" width="60" height="80" rx="6" fill="#d4e8d0" opacity="0.4"/>
+                  <!-- Emergency route -->
+                  <polyline points="150,480 150,400 150,330 150,260 150,190 150,120 220,120 220,190 220,260" fill="none" stroke="#dc2626" stroke-width="4" stroke-linecap="round" stroke-dasharray="12,6" opacity="0.8">
+                    <animate attributeName="stroke-dashoffset" values="0;-36" dur="1.5s" repeatCount="indefinite"/>
+                  </polyline>
+                  <!-- User location pulse -->
+                  <circle cx="150" cy="480" r="20" fill="#3b82f6" opacity="0.15">
+                    <animate attributeName="r" values="16;24;16" dur="2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.15;0.05;0.15" dur="2s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="150" cy="480" r="8" fill="#3b82f6" opacity="0.25"/>
+                  <circle cx="150" cy="480" r="5" fill="#3b82f6"/>
+                  <circle cx="150" cy="480" r="2.5" fill="#ffffff"/>
+                  <!-- Ambulance marker -->
+                  <g class="mock-map__marker" transform="translate(220, 260)">
+                    <circle r="16" fill="#dc2626" opacity="0.2">
+                      <animate attributeName="r" values="16;22;16" dur="1.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle r="12" fill="#dc2626"/>
+                    <text y="1" text-anchor="middle" font-size="10" fill="white" font-family="system-ui" font-weight="700">+</text>
+                  </g>
+                  <!-- Hospital marker -->
+                  <g class="mock-map__marker" transform="translate(220, 190)">
+                    <rect x="-12" y="-12" width="24" height="24" rx="4" fill="#059669"/>
+                    <text y="2" text-anchor="middle" font-size="14" fill="white" font-family="system-ui" font-weight="700">H</text>
+                  </g>
+                  <!-- ETA card -->
+                  <g transform="translate(10, 25)">
+                    <rect width="135" height="48" rx="8" fill="white" filter="url(#shadow)"/>
+                    <text x="12" y="18" font-size="10" fill="#64748b" font-family="system-ui" font-weight="500">ETA</text>
+                    <text x="12" y="36" font-size="18" fill="#0f172a" font-family="system-ui" font-weight="700">4:32</text>
+                    <text x="85" y="18" font-size="10" fill="#64748b" font-family="system-ui" font-weight="500">Distance</text>
+                    <text x="85" y="36" font-size="14" fill="#0f172a" font-family="system-ui" font-weight="600">2.1 km</text>
+                  </g>
+                  <!-- Response status card -->
+                  <g transform="translate(10, 85)">
+                    <rect width="135" height="32" rx="6" fill="white" filter="url(#shadow)"/>
+                    <circle cx="18" cy="16" r="5" fill="#22c55e"/>
+                    <text x="28" y="20" font-size="11" fill="#0f172a" font-family="system-ui" font-weight="600">Responding</text>
+                  </g>
+                  <!-- Filter/Shadow defs -->
+                  <defs>
+                    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+                      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/>
+                    </filter>
+                  </defs>
+                </svg>
+                <div class="mock-map__label">
+                  <span class="mock-map__demo-tag">DEMO DATA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Status Strip -->
+  <section class="status-strip" aria-label="System demonstration status">
+    <div class="container">
+      <div class="status-strip__inner">
+        <div class="status-strip__item">
+          <span class="status-strip__dot status-strip__dot--active"></span>
+          <span class="status-strip__label">Emergency Network</span>
+          <span class="status-strip__value">ACTIVE</span>
+        </div>
+        <div class="status-strip__item">
+          <span class="status-strip__dot status-strip__dot--active"></span>
+          <span class="status-strip__label">Location Services</span>
+          <span class="status-strip__value">ACTIVE</span>
+        </div>
+        <div class="status-strip__item">
+          <span class="status-strip__dot status-strip__dot--connected"></span>
+          <span class="status-strip__label">Hospital Network</span>
+          <span class="status-strip__value">CONNECTED</span>
+        </div>
+        <div class="status-strip__item">
+          <span class="status-strip__dot status-strip__dot--active"></span>
+          <span class="status-strip__label">Response Monitoring</span>
+          <span class="status-strip__value">ACTIVE</span>
+        </div>
+      </div>
+      <p class="status-strip__disclaimer">Demonstration / prototype states — not real emergency infrastructure</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- PROBLEM SECTION -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section problems" id="platform">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">The Challenge</span>
+        <h2 class="section__title">Emergency response is not only about speed.<br/>It's about coordination.</h2>
+      </div>
+      <div class="problems__grid" data-animate="stagger-up">
+        <div class="problem-card">
+          <div class="problem-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="40" height="40" rx="8" fill="#fef2f2"/><path d="M16 20h16M16 28h10" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/><circle cx="36" cy="28" r="3" fill="#dc2626"/></svg>
+          </div>
+          <h3 class="problem-card__title">Traffic Congestion</h3>
+          <p class="problem-card__text">Emergency vehicles lose critical minutes navigating through congested roadways. Without real-time communication with nearby drivers, ambulances face the same delays as regular traffic.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="40" height="40" rx="8" fill="#fef2f2"/><path d="M14 24c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/><line x1="24" y1="18" x2="24" y2="30" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/><line x1="18" y1="30" x2="30" y2="30" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="problem-card__title">Communication Gaps</h3>
+          <p class="problem-card__text">Citizens, responders and hospitals often operate in silos. Information about incoming emergencies doesn't always reach the right people at the right time, causing delays in preparation.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="40" height="40" rx="8" fill="#fef2f2"/><rect x="14" y="14" width="20" height="20" rx="3" stroke="#dc2626" stroke-width="2.5"/><line x1="14" y1="22" x2="34" y2="22" stroke="#dc2626" stroke-width="2.5"/><line x1="22" y1="14" x2="22" y2="34" stroke="#dc2626" stroke-width="2.5"/></svg>
+          </div>
+          <h3 class="problem-card__title">Hospital Readiness</h3>
+          <p class="problem-card__text">Hospitals are frequently caught off-guard by incoming emergency patients. Without advance notification of patient volume, acuity level or arrival time, emergency departments cannot optimally prepare.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="40" height="40" rx="8" fill="#fef2f2"/><circle cx="24" cy="20" r="6" stroke="#dc2626" stroke-width="2.5"/><path d="M14 36c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="problem-card__title">Driver Awareness</h3>
+          <p class="problem-card__text">Most drivers are unaware an emergency vehicle is approaching until they see or hear it directly. By then, the vehicle may already be stuck behind them, costing precious response time.</p>
+        </div>
+      </div>
+      <p class="problems__statement" data-animate="fade-up">EMERO brings these disconnected pieces into one response ecosystem.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- INTERACTIVE MOBILE APP -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section app-showcase" id="how-it-works" data-animate="fade-up">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Interactive Preview</span>
+        <h2 class="section__title">See EMERO in Action</h2>
+        <p class="section__subtitle">Explore the EMERO mobile application. Switch between screens to experience the emergency response flow from citizen to hospital.</p>
+      </div>
+      <div class="app-showcase__layout">
+        <!-- Screen selector tabs -->
+        <div class="app-showcase__tabs" role="tablist" aria-label="Application screens">
+          <button class="app-tab active" role="tab" aria-selected="true" data-screen="home" id="tab-home" aria-controls="panel-home">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+            Home
+          </button>
+          <button class="app-tab" role="tab" aria-selected="false" data-screen="request" id="tab-request" aria-controls="panel-request">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+            Emergency Request
+          </button>
+          <button class="app-tab" role="tab" aria-selected="false" data-screen="active" id="tab-active" aria-controls="panel-active">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+            Emergency Active
+          </button>
+          <button class="app-tab" role="tab" aria-selected="false" data-screen="vehicle" id="tab-vehicle" aria-controls="panel-vehicle">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/></svg>
+            Vehicle Alert
+          </button>
+          <button class="app-tab" role="tab" aria-selected="false" data-screen="hospital" id="tab-hospital" aria-controls="panel-hospital">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/><path d="M8 10a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"/></svg>
+            Hospital
+          </button>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="app-showcase__phone-wrap">
+          <div class="phone-frame phone-frame--interactive">
+            <div class="phone-frame__notch"></div>
+            <div class="phone-frame__screen">
+
+              <!-- SCREEN: Home -->
+              <div class="app-screen active" id="panel-home" role="tabpanel" aria-labelledby="tab-home">
+                <div class="app-screen__status-bar">
+                  <span>9:41</span>
+                  <span>●●● 📶 🔋</span>
+                </div>
+                <div class="app-screen__content">
+                  <div class="app-home">
+                    <p class="app-home__greeting">Good Evening</p>
+                    <div class="app-home__network-status">
+                      <span class="status-dot status-dot--green"></span>
+                      Emergency Network — Connected
+                    </div>
+                    <div class="app-home__map">
+                      <svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" class="app-home__map-svg">
+                        <rect width="260" height="160" fill="#eef2f7" rx="8"/>
+                        <line x1="0" y1="40" x2="260" y2="40" stroke="#d1d9e6" stroke-width="8"/>
+                        <line x1="0" y1="80" x2="260" y2="80" stroke="#d1d9e6" stroke-width="8"/>
+                        <line x1="0" y1="120" x2="260" y2="120" stroke="#d1d9e6" stroke-width="8"/>
+                        <line x1="65" y1="0" x2="65" y2="160" stroke="#d1d9e6" stroke-width="8"/>
+                        <line x1="130" y1="0" x2="130" y2="160" stroke="#c8d1de" stroke-width="6"/>
+                        <line x1="195" y1="0" x2="195" y2="160" stroke="#d1d9e6" stroke-width="8"/>
+                        <!-- User -->
+                        <circle cx="130" cy="120" r="5" fill="#3b82f6"/>
+                        <circle cx="130" cy="120" r="3" fill="#fff"/>
+                        <!-- Ambulance icons -->
+                        <circle cx="65" cy="40" r="8" fill="#dc2626" opacity="0.15"/>
+                        <circle cx="65" cy="40" r="5" fill="#dc2626"/>
+                        <text x="65" y="43" text-anchor="middle" font-size="7" fill="#fff" font-weight="700">+</text>
+                        <!-- Hospital -->
+                        <rect x="186" y="74" width="18" height="14" rx="3" fill="#059669"/>
+                        <text x="195" y="84" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">H</text>
+                      </svg>
+                    </div>
+                    <div class="app-home__info-row">
+                      <div class="app-home__info-item">
+                        <span class="status-dot status-dot--blue"></span>
+                        <span>3 Nearby Vehicles</span>
+                      </div>
+                      <div class="app-home__info-item">
+                        <span class="status-dot status-dot--green"></span>
+                        <span>2 Nearby Hospitals</span>
+                      </div>
+                    </div>
+                    <button class="app-emergency-btn" type="button">Request Emergency</button>
+                    <span class="app-demo-tag">DEMO DATA</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SCREEN: Emergency Request -->
+              <div class="app-screen" id="panel-request" role="tabpanel" aria-labelledby="tab-request">
+                <div class="app-screen__status-bar">
+                  <span>9:41</span>
+                  <span>●●● 📶 🔋</span>
+                </div>
+                <div class="app-screen__content">
+                  <div class="app-request">
+                    <h3 class="app-request__title">Emergency Request</h3>
+                    <p class="app-request__subtitle">Select the type of emergency</p>
+                    <div class="app-request__types">
+                      <button class="app-request__type app-request__type--active">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        <span>Medical</span>
+                      </button>
+                      <button class="app-request__type">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
+                        <span>Accident</span>
+                      </button>
+                      <button class="app-request__type">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6 2 11c0 3 1.5 5.5 4 7v4l3-2h3l3 2v-4c2.5-1.5 4-4 4-7 0-5-4.48-9-10-9z"/></svg>
+                        <span>Fire</span>
+                      </button>
+                      <button class="app-request__type">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Other</span>
+                      </button>
+                    </div>
+                    <div class="app-request__location">
+                      <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18" class="app-request__location-icon"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                      <div>
+                        <p class="app-request__location-label">Location</p>
+                        <p class="app-request__location-value">Automatically detected</p>
+                        <p class="app-request__location-coord">26.8467° N, 80.9462° E</p>
+                      </div>
+                    </div>
+                    <button class="app-confirm-btn" type="button">Confirm Emergency</button>
+                    <span class="app-demo-tag">DEMO DATA</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SCREEN: Emergency Active -->
+              <div class="app-screen" id="panel-active" role="tabpanel" aria-labelledby="tab-active">
+                <div class="app-screen__status-bar app-screen__status-bar--red">
+                  <span>9:41</span>
+                  <span>●●● 📶 🔋</span>
+                </div>
+                <div class="app-screen__content">
+                  <div class="app-active">
+                    <div class="app-active__badge">EMERGENCY ACTIVE</div>
+                    <div class="app-active__info">
+                      <div class="app-active__row">
+                        <span class="app-active__label">Response Vehicle</span>
+                        <span class="app-active__value">Ambulance 07</span>
+                      </div>
+                      <div class="app-active__row">
+                        <span class="app-active__label">ETA</span>
+                        <span class="app-active__value app-active__value--large">4:32</span>
+                      </div>
+                      <div class="app-active__row">
+                        <span class="app-active__label">Distance</span>
+                        <span class="app-active__value">2.1 km</span>
+                      </div>
+                      <div class="app-active__row">
+                        <span class="app-active__label">Status</span>
+                        <span class="app-active__status"><span class="status-dot status-dot--pulse"></span> Responding</span>
+                      </div>
+                    </div>
+                    <div class="app-active__map">
+                      <svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="240" height="120" fill="#eef2f7" rx="8"/>
+                        <line x1="20" y1="20" x2="220" y2="20" stroke="#d1d9e6" stroke-width="6"/>
+                        <line x1="20" y1="60" x2="220" y2="60" stroke="#d1d9e6" stroke-width="6"/>
+                        <line x1="20" y1="100" x2="220" y2="100" stroke="#d1d9e6" stroke-width="6"/>
+                        <line x1="60" y1="10" x2="60" y2="110" stroke="#d1d9e6" stroke-width="6"/>
+                        <line x1="120" y1="10" x2="120" y2="110" stroke="#c8d1de" stroke-width="4"/>
+                        <line x1="180" y1="10" x2="180" y2="110" stroke="#d1d9e6" stroke-width="6"/>
+                        <!-- Route -->
+                        <polyline points="40,90 60,90 120,90 120,60 120,40 180,40" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="8,4" opacity="0.7"/>
+                        <!-- Ambulance -->
+                        <circle cx="120" cy="60" r="8" fill="#dc2626"/>
+                        <text x="120" y="63" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">+</text>
+                        <!-- Target -->
+                        <circle cx="40" cy="90" r="6" fill="#3b82f6"/>
+                        <circle cx="40" cy="90" r="3" fill="#fff"/>
+                      </svg>
+                    </div>
+                    <div class="app-active__hospital">
+                      <span>Hospital</span>
+                      <span class="app-active__hospital-name">City General Hospital</span>
+                    </div>
+                    <button class="app-contact-btn" type="button">
+                      <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                      Contact Responder
+                    </button>
+                    <span class="app-demo-tag">DEMO DATA</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SCREEN: Vehicle Alert -->
+              <div class="app-screen" id="panel-vehicle" role="tabpanel" aria-labelledby="tab-vehicle">
+                <div class="app-screen__status-bar app-screen__status-bar--amber">
+                  <span>9:41</span>
+                  <span>●●● 📶 🔋</span>
+                </div>
+                <div class="app-screen__content">
+                  <div class="app-vehicle">
+                    <div class="app-vehicle__alert-icon">
+                      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="22" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+                        <path d="M24 12v14" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="24" cy="32" r="2" fill="#dc2626"/>
+                      </svg>
+                    </div>
+                    <h3 class="app-vehicle__title">EMERGENCY VEHICLE<br/>APPROACHING</h3>
+                    <p class="app-vehicle__subtitle">Ambulance approaching from the north</p>
+                    <div class="app-vehicle__info">
+                      <div class="app-vehicle__row">
+                        <span class="app-vehicle__label">Distance</span>
+                        <span class="app-vehicle__value">450 m</span>
+                      </div>
+                      <div class="app-vehicle__row">
+                        <span class="app-vehicle__label">Direction</span>
+                        <span class="app-vehicle__value">North →</span>
+                      </div>
+                      <div class="app-vehicle__row">
+                        <span class="app-vehicle__label">Speed</span>
+                        <span class="app-vehicle__value">62 km/h</span>
+                      </div>
+                    </div>
+                    <div class="app-vehicle__map">
+                      <svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="240" height="120" fill="#eef2f7" rx="8"/>
+                        <line x1="120" y1="0" x2="120" y2="120" stroke="#d1d9e6" stroke-width="8"/>
+                        <line x1="0" y1="60" x2="240" y2="60" stroke="#d1d9e6" stroke-width="8"/>
+                        <circle cx="120" cy="60" r="5" fill="#3b82f6"/>
+                        <circle cx="120" cy="60" r="3" fill="#fff"/>
+                        <!-- Ambulance approaching -->
+                        <circle cx="120" cy="20" r="8" fill="#dc2626"/>
+                        <text x="120" y="23" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">+</text>
+                        <line x1="120" y1="30" x2="120" y2="52" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,3"/>
+                      </svg>
+                    </div>
+                    <p class="app-vehicle__message">Please keep the emergency lane clear.</p>
+                    <span class="app-demo-tag">DEMO DATA</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SCREEN: Hospital Coordination -->
+              <div class="app-screen" id="panel-hospital" role="tabpanel" aria-labelledby="tab-hospital">
+                <div class="app-screen__status-bar">
+                  <span>9:41</span>
+                  <span>●●● 📶 🔋</span>
+                </div>
+                <div class="app-screen__content">
+                  <div class="app-hospital-screen">
+                    <div class="app-hospital-screen__header">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                      <h3>Incoming Ambulance</h3>
+                    </div>
+                    <div class="app-hospital-screen__info">
+                      <div class="app-hospital-screen__row">
+                        <span class="app-hospital-screen__label">ETA</span>
+                        <span class="app-hospital-screen__value app-hospital-screen__value--large">4:32</span>
+                      </div>
+                      <div class="app-hospital-screen__row">
+                        <span class="app-hospital-screen__label">Patient Priority</span>
+                        <span class="app-hospital-screen__priority">High</span>
+                      </div>
+                      <div class="app-hospital-screen__row">
+                        <span class="app-hospital-screen__label">Emergency Dept.</span>
+                        <span class="app-hospital-screen__value">Ready — Bay 3</span>
+                      </div>
+                    </div>
+                    <div class="app-hospital-screen__status">
+                      <h4>Hospital Readiness</h4>
+                      <div class="app-hospital-screen__readiness">
+                        <div class="app-hospital-screen__readiness-item">
+                          <span class="status-dot status-dot--green"></span>
+                          <span>Emergency Dept. Available</span>
+                        </div>
+                        <div class="app-hospital-screen__readiness-item">
+                          <span class="status-dot status-dot--green"></span>
+                          <span>Trauma Team Notified</span>
+                        </div>
+                        <div class="app-hospital-screen__readiness-item">
+                          <span class="status-dot status-dot--amber"></span>
+                          <span>Operating Room 2 in use</span>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="app-demo-tag">DEMO DATA</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- EMERO ECOSYSTEM -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section ecosystem" id="network" data-animate="fade-up">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">System Architecture</span>
+        <h2 class="section__title">The EMERO Ecosystem</h2>
+        <p class="section__subtitle">A connected response network linking citizens, emergency vehicles, hospitals and responders through intelligent coordination.</p>
+      </div>
+      <div class="ecosystem__diagram">
+        <!-- Central core -->
+        <div class="ecosystem__center">
+          <div class="ecosystem__core">
+            <span class="ecosystem__core-text">EMERO<br/>CORE</span>
+          </div>
+        </div>
+        <!-- Nodes -->
+        <div class="ecosystem__nodes">
+          <div class="ecosystem__node ecosystem__node--citizen">
+            <div class="ecosystem__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span class="ecosystem__node-label">Citizen</span>
+          </div>
+          <div class="ecosystem__node ecosystem__node--vehicle">
+            <div class="ecosystem__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="12" y1="12" x2="12" y2="18"/></svg>
+            </div>
+            <span class="ecosystem__node-label">Emergency Vehicle</span>
+          </div>
+          <div class="ecosystem__node ecosystem__node--hospital">
+            <div class="ecosystem__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v14M21 7v14M6 11h.01M6 15h.01M6 19h.01M10 11h4M10 15h4M10 19h4M18 11h.01M18 15h.01M18 19h.01"/><rect x="3" y="3" width="18" height="4" rx="1"/></svg>
+            </div>
+            <span class="ecosystem__node-label">Hospital</span>
+          </div>
+          <div class="ecosystem__node ecosystem__node--responder">
+            <div class="ecosystem__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <span class="ecosystem__node-label">Responder</span>
+          </div>
+        </div>
+        <!-- Connection layers -->
+        <div class="ecosystem__layers">
+          <div class="ecosystem__layer">
+            <span>Maps</span>
+          </div>
+          <div class="ecosystem__layer">
+            <span>Real-time Communication</span>
+          </div>
+          <div class="ecosystem__layer">
+            <span>AI</span>
+          </div>
+          <div class="ecosystem__layer">
+            <span>Analytics</span>
+          </div>
+        </div>
+        <!-- Connection lines -->
+        <svg class="ecosystem__lines" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+          <line x1="300" y1="200" x2="300" y2="50" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="300" y1="200" x2="530" y2="200" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="300" y1="200" x2="300" y2="350" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="300" y1="200" x2="70" y2="200" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- FEATURES -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Capabilities</span>
+        <h2 class="section__title">Built for Emergency Response</h2>
+        <p class="section__subtitle">Core features designed to improve coordination between citizens, responders, vehicles and hospitals.</p>
+      </div>
+      <div class="features__grid" data-animate="stagger-up">
+
+        <!-- Feature 1 -->
+        <div class="feature-card" id="feature-routing">
+          <div class="feature-card__icon feature-card__icon--red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          </div>
+          <h3 class="feature-card__title">Intelligent Emergency Routing</h3>
+          <p class="feature-card__text">Calculates optimized routes for emergency vehicles, accounting for traffic conditions, road networks and proximity to the incident. Designed to reduce travel time to emergencies.</p>
+          <div class="feature-card__preview">
+            <div class="feature-card__preview-inner feature-card__preview--routing">
+              <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="100" fill="#f8fafc"/>
+                <line x1="0" y1="30" x2="200" y2="30" stroke="#e2e8f0" stroke-width="6"/>
+                <line x1="0" y1="70" x2="200" y2="70" stroke="#e2e8f0" stroke-width="6"/>
+                <line x1="50" y1="0" x2="50" y2="100" stroke="#e2e8f0" stroke-width="6"/>
+                <line x1="100" y1="0" x2="100" y2="100" stroke="#e2e8f0" stroke-width="4"/>
+                <line x1="150" y1="0" x2="150" y2="100" stroke="#e2e8f0" stroke-width="6"/>
+                <polyline points="25,85 50,85 100,85 100,50 150,50" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6,3"/>
+                <circle cx="25" cy="85" r="4" fill="#3b82f6"/>
+                <circle cx="150" cy="50" r="5" fill="#dc2626"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card" id="feature-vehicle-awareness">
+          <div class="feature-card__icon feature-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Emergency Vehicle Awareness</h3>
+          <p class="feature-card__text">Notifies nearby road users when an emergency vehicle is approaching, providing distance, direction and speed information so drivers can respond appropriately.</p>
+          <div class="feature-card__preview">
+            <div class="feature-card__preview-inner feature-card__preview--vehicle">
+              <div class="feature-card__alert-strip">
+                <span class="feature-card__alert-dot"></span>
+                <span>Ambulance 450m — Approaching</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card" id="feature-hospital">
+          <div class="feature-card__icon feature-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v14M21 7v14M6 11h.01M6 15h.01M6 19h.01M10 11h4M10 15h4M10 19h4M18 11h.01M18 15h.01M18 19h.01"/><rect x="3" y="3" width="18" height="4" rx="1"/></svg>
+          </div>
+          <h3 class="feature-card__title">Hospital Coordination</h3>
+          <p class="feature-card__text">Sends incoming patient data to hospitals before arrival, including estimated time of arrival, patient priority and emergency type, allowing hospitals to prepare resources in advance.</p>
+          <div class="feature-card__preview">
+            <div class="feature-card__preview-inner feature-card__preview--hospital">
+              <div class="feature-card__hospital-status">
+                <span class="status-dot status-dot--green"></span>
+                <span>Bay 3 — Ready</span>
+                <span class="feature-card__eta-badge">ETA 4:32</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card" id="feature-ai-drivers">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3 class="feature-card__title">AI-Assisted Driver Monitoring</h3>
+          <p class="feature-card__text">Analyzes driving patterns using on-device machine learning to identify potential risks. Designed to support driver awareness and promote safer road behavior.</p>
+          <div class="feature-card__preview">
+            <div class="feature-card__preview-inner feature-card__preview--ai">
+              <div class="feature-card__ai-metric">
+                <div class="feature-card__ai-bar">
+                  <div class="feature-card__ai-bar-fill" style="width: 78%"></div>
+                </div>
+                <span class="feature-card__ai-label">Alertness Score: 78%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card" id="feature-analytics">
+          <div class="feature-card__icon feature-card__icon--teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Emergency Analytics</h3>
+          <p class="feature-card__text">Aggregates anonymized emergency data to identify patterns, high-risk zones and response-time trends. Supports data-driven improvements to emergency infrastructure planning.</p>
+          <div class="feature-card__preview">
+            <div class="feature-card__preview-inner feature-card__preview--analytics">
+              <svg viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="45" width="20" height="12" fill="#bfdbfe" rx="2"/>
+                <rect x="38" y="30" width="20" height="27" fill="#93c5fd" rx="2"/>
+                <rect x="66" y="15" width="20" height="42" fill="#60a5fa" rx="2"/>
+                <rect x="94" y="25" width="20" height="32" fill="#93c5fd" rx="2"/>
+                <rect x="122" y="10" width="20" height="47" fill="#3b82f6" rx="2"/>
+                <rect x="150" y="35" width="20" height="22" fill="#93c5fd" rx="2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card" id="feature-network">
+          <div class="feature-card__icon feature-card__icon--navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Verified Emergency Network</h3>
+          <p class="feature-card__text">Connects verified participants — citizens, emergency vehicles, hospitals and responders — in a single coordinated network, reducing information silos across the response chain.</p>
+          <div class="feature-card__preview">
+            <div class="feature-card__preview-inner feature-card__preview--network">
+              <div class="feature-card__network-nodes">
+                <span class="feature-card__net-node feature-card__net-node--1"></span>
+                <span class="feature-card__net-node feature-card__net-node--2"></span>
+                <span class="feature-card__net-node feature-card__net-node--3"></span>
+                <span class="feature-card__net-node feature-card__net-node--4"></span>
+                <span class="feature-card__net-line feature-card__net-line--1"></span>
+                <span class="feature-card__net-line feature-card__net-line--2"></span>
+                <span class="feature-card__net-line feature-card__net-line--3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- VANISHED PATH -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section vanished-path" data-animate="fade-up">
+    <div class="container">
+      <div class="vanished-path__grid">
+        <div class="vanished-path__content">
+          <span class="section__label">Vanished Path Concept</span>
+          <h2 class="section__title">A Clearer Path for Emergency Vehicles</h2>
+          <p class="vanished-path__text">EMERO is designed to communicate emergency vehicle movement to nearby road users through real-time alerts. When an ambulance is approaching, drivers in the vicinity receive notifications with distance, direction and estimated time — allowing them to respond appropriately and keep emergency lanes clear.</p>
+          <p class="vanished-path__text">This "vanished path" concept aims to create a collaborative clearing of roadways where awareness replaces obstruction, and information replaces reaction time.</p>
+          <div class="vanished-path__note">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+            <p>EMERO does not automatically control traffic lights or physically clear traffic. The system focuses on information-sharing and awareness to support driver response.</p>
+          </div>
+        </div>
+        <div class="vanished-path__visual">
+          <div class="vanished-path__map">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="vanished-path__map-svg">
+              <!-- Background -->
+              <rect width="400" height="400" fill="#f8fafc" rx="12"/>
+              <!-- Road network -->
+              <rect x="0" y="0" width="400" height="400" fill="#f1f5f9"/>
+              <!-- Main roads -->
+              <rect x="0" y="180" width="400" height="40" fill="#e2e8f0"/>
+              <rect x="0" y="280" width="400" height="30" fill="#e2e8f0"/>
+              <rect x="180" y="0" width="40" height="400" fill="#e2e8f0"/>
+              <rect x="80" y="0" width="25" height="400" fill="#e2e8f0"/>
+              <rect x="300" y="0" width="25" height="400" fill="#e2e8f0"/>
+              <!-- Secondary roads -->
+              <rect x="0" y="100" width="400" height="15" fill="#e8edf4"/>
+              <rect x="0" y="350" width="400" height="15" fill="#e8edf4"/>
+              <rect x="130" y="0" width="12" height="400" fill="#e8edf4"/>
+              <rect x="240" y="0" width="12" height="400" fill="#e8edf4"/>
+              <!-- Road center lines -->
+              <line x1="0" y1="200" x2="400" y2="200" stroke="#d1d9e6" stroke-width="1" stroke-dasharray="6,4"/>
+              <line x1="200" y1="0" x2="200" y2="400" stroke="#d1d9e6" stroke-width="1" stroke-dasharray="6,4"/>
+              <!-- Buildings/blocks -->
+              <rect x="95" y="115" width="30" height="60" rx="3" fill="#d6e0ed" opacity="0.4"/>
+              <rect x="215" y="115" width="20" height="60" rx="3" fill="#d6e0ed" opacity="0.3"/>
+              <rect x="95" y="225" width="30" height="50" rx="3" fill="#d6e0ed" opacity="0.3"/>
+              <rect x="215" y="225" width="20" height="50" rx="3" fill="#d6e0ed" opacity="0.4"/>
+              <rect x="310" y="115" width="30" height="60" rx="3" fill="#d6e0ed" opacity="0.35"/>
+              <rect x="310" y="225" width="30" height="50" rx="3" fill="#d6e0ed" opacity="0.35"/>
+              <!-- Green spaces -->
+              <rect x="10" y="360" width="60" height="30" rx="6" fill="#d4e8d0" opacity="0.5"/>
+              <rect x="330" y="10" width="60" height="80" rx="6" fill="#d4e8d0" opacity="0.4"/>
+              <!-- Alert radius from ambulance -->
+              <circle cx="200" cy="200" r="100" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.3">
+                <animate attributeName="r" values="80;120;80" dur="3s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="200" cy="200" r="60" fill="#dc2626" opacity="0.04"/>
+              <!-- Emergency route -->
+              <line x1="300" y1="200" x2="200" y2="200" stroke="#dc2626" stroke-width="3" stroke-dasharray="8,4" opacity="0.6"/>
+              <!-- Ambulance -->
+              <g transform="translate(200, 200)">
+                <circle r="14" fill="#dc2626" opacity="0.2">
+                  <animate attributeName="r" values="14;20;14" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle r="10" fill="#dc2626"/>
+                <text y="4" text-anchor="middle" font-size="12" fill="white" font-weight="700" font-family="system-ui">+</text>
+              </g>
+              <!-- Nearby cars being alerted -->
+              <g transform="translate(130, 190)">
+                <rect x="-8" y="-5" width="16" height="10" rx="3" fill="#64748b"/>
+                <rect x="0" y="-3" width="1" height="6" fill="#94a3b8"/>
+              </g>
+              <g transform="translate(260, 195)">
+                <rect x="-8" y="-5" width="16" height="10" rx="3" fill="#64748b"/>
+                <rect x="0" y="-3" width="1" height="6" fill="#94a3b8"/>
+              </g>
+              <g transform="translate(195, 130)">
+                <rect x="-5" y="-8" width="10" height="16" rx="3" fill="#64748b"/>
+                <rect x="-3" y="0" width="6" height="1" fill="#94a3b8"/>
+              </g>
+              <!-- Alert icons on cars -->
+              <g transform="translate(130, 178)">
+                <circle r="6" fill="#f59e0b"/>
+                <text y="3" text-anchor="middle" font-size="8" fill="white" font-weight="700">!</text>
+              </g>
+              <g transform="translate(260, 183)">
+                <circle r="6" fill="#f59e0b"/>
+                <text y="3" text-anchor="middle" font-size="8" fill="white" font-weight="700">!</text>
+              </g>
+              <!-- Hospital -->
+              <g transform="translate(300, 100)">
+                <rect x="-14" y="-14" width="28" height="28" rx="5" fill="#059669"/>
+                <text y="5" text-anchor="middle" font-size="16" fill="white" font-weight="700" font-family="system-ui">H</text>
+              </g>
+              <!-- Label -->
+              <text x="200" y="390" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="system-ui" font-weight="500">Demonstration visualization — not live data</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- AI SECTION -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section ai-section" data-animate="fade-up">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Artificial Intelligence</span>
+        <h2 class="section__title">Intelligence Behind the Response</h2>
+        <p class="section__subtitle">AI capabilities designed to improve decision-making across the emergency response chain.</p>
+      </div>
+      <div class="ai-section__grid">
+        <div class="ai-card">
+          <div class="ai-card__number">01</div>
+          <h3 class="ai-card__title">Driver Monitoring</h3>
+          <p class="ai-card__text">On-device machine learning analyzes driving patterns to detect signs of fatigue, distraction or drowsiness, providing real-time alerts to support driver awareness.</p>
+          <span class="ai-card__status ai-card__status--prototype">Prototype</span>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card__number">02</div>
+          <h3 class="ai-card__title">Route Intelligence</h3>
+          <p class="ai-card__text">AI-assisted route optimization evaluates road network conditions to suggest efficient paths for emergency vehicles, reducing response travel time.</p>
+          <span class="ai-card__status ai-card__status--prototype">Prototype</span>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card__number">03</div>
+          <h3 class="ai-card__title">Emergency Prioritization</h3>
+          <p class="ai-card__text">Machine learning models assess incoming emergency data to help prioritize response allocation based on severity, location and available resources.</p>
+          <span class="ai-card__status ai-card__status--research">Research Phase</span>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card__number">04</div>
+          <h3 class="ai-card__title">Response Analytics</h3>
+          <p class="ai-card__text">Aggregated anonymized data is analyzed to identify patterns in emergency frequency, response times and resource utilization across the network.</p>
+          <span class="ai-card__status ai-card__status--research">Research Phase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- EMERGENCY SCENARIO TIMELINE -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section scenario" id="demo" data-animate="fade-up">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Demonstration Scenario</span>
+        <h2 class="section__title">A Road Accident. One Response. One Connected System.</h2>
+        <p class="section__subtitle">A demonstration of how EMERO connects the response chain from initial report to hospital arrival. Times shown are for illustrative purposes.</p>
+      </div>
+      <div class="scenario__layout">
+        <div class="scenario__timeline" id="timeline">
+          <div class="timeline__item active" data-time="0">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__time">00:00</span>
+              <h4 class="timeline__title">Accident Reported</h4>
+              <p class="timeline__text">Citizen reports an emergency through the EMERO app. Location is captured automatically.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-time="5">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__time">00:05</span>
+              <h4 class="timeline__title">Location Verified</h4>
+              <p class="timeline__text">System verifies the GPS coordinates and cross-references with the road network database.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-time="12">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__time">00:12</span>
+              <h4 class="timeline__title">Response Vehicle Identified</h4>
+              <p class="timeline__text">AI identifies the nearest available ambulance and calculates the optimal route to the incident.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-time="20">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__time">00:20</span>
+              <h4 class="timeline__title">Emergency Vehicle Dispatched</h4>
+              <p class="timeline__text">Ambulance 07 is dispatched. Driver receives route guidance and incident details.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-time="30">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__time">00:30</span>
+              <h4 class="timeline__title">Nearby Drivers Alerted</h4>
+              <p class="timeline__text">Drivers within the emergency vehicle's path receive alerts about the approaching ambulance.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-time="70">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__time">01:10</span>
+              <h4 class="timeline__title">Hospital Notified</h4>
+              <p class="timeline__text">City General Hospital receives patient data, ETA and priority level. Emergency department prepares.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-time="272">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__time">04:32</span>
+              <h4 class="timeline__title">Ambulance Reaches Location</h4>
+              <p class="timeline__text">Emergency vehicle arrives at the incident site. Patient is assessed and transported to the hospital.</p>
+            </div>
+          </div>
+        </div>
+        <div class="scenario__map">
+          <div class="scenario__map-container" id="scenarioMap">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="scenario__map-svg">
+              <!-- Background -->
+              <rect width="500" height="500" fill="#f1f5f9"/>
+              <!-- Road grid -->
+              <rect x="0" y="100" width="500" height="25" fill="#e2e8f0"/>
+              <rect x="0" y="200" width="500" height="25" fill="#e2e8f0"/>
+              <rect x="0" y="300" width="500" height="25" fill="#e2e8f0"/>
+              <rect x="0" y="400" width="500" height="25" fill="#e2e8f0"/>
+              <rect x="100" y="0" width="25" height="500" fill="#e2e8f0"/>
+              <rect x="200" y="0" width="25" height="500" fill="#e2e8f0"/>
+              <rect x="300" y="0" width="25" height="500" fill="#e2e8f0"/>
+              <rect x="400" y="0" width="25" height="500" fill="#e2e8f0"/>
+              <!-- Secondary roads -->
+              <rect x="0" y="150" width="500" height="10" fill="#e8edf4"/>
+              <rect x="0" y="250" width="500" height="10" fill="#e8edf4"/>
+              <rect x="0" y="350" width="500" height="10" fill="#e8edf4"/>
+              <rect x="150" y="0" width="10" height="500" fill="#e8edf4"/>
+              <rect x="250" y="0" width="10" height="500" fill="#e8edf4"/>
+              <rect x="350" y="0" width="10" height="500" fill="#e8edf4"/>
+              <!-- Road center lines -->
+              <line x1="0" y1="112" x2="500" y2="112" stroke="#d1d9e6" stroke-width="1" stroke-dasharray="6,4"/>
+              <line x1="0" y1="212" x2="500" y2="212" stroke="#d1d9e6" stroke-width="1" stroke-dasharray="6,4"/>
+              <line x1="112" y1="0" x2="112" y2="500" stroke="#d1d9e6" stroke-width="1" stroke-dasharray="6,4"/>
+              <line x1="212" y1="0" x2="212" y2="500" stroke="#d1d9e6" stroke-width="1" stroke-dasharray="6,4"/>
+              <!-- Buildings -->
+              <rect x="30" y="30" width="60" height="60" rx="4" fill="#d6e0ed" opacity="0.3"/>
+              <rect x="140" y="30" width="50" height="60" rx="4" fill="#d6e0ed" opacity="0.25"/>
+              <rect x="330" y="30" width="60" height="60" rx="4" fill="#d6e0ed" opacity="0.3"/>
+              <rect x="430" y="30" width="55" height="60" rx="4" fill="#d6e0ed" opacity="0.25"/>
+              <rect x="30" y="140" width="60" height="50" rx="4" fill="#d6e0ed" opacity="0.2"/>
+              <rect x="140" y="140" width="50" height="50" rx="4" fill="#d6e0ed" opacity="0.25"/>
+              <rect x="330" y="140" width="60" height="50" rx="4" fill="#d6e0ed" opacity="0.2"/>
+              <rect x="430" y="140" width="55" height="50" rx="4" fill="#d6e0ed" opacity="0.25"/>
+              <rect x="30" y="240" width="60" height="50" rx="4" fill="#d6e0ed" opacity="0.25"/>
+              <rect x="240" y="240" width="50" height="50" rx="4" fill="#d6e0ed" opacity="0.3"/>
+              <rect x="330" y="240" width="60" height="50" rx="4" fill="#d6e0ed" opacity="0.25"/>
+              <rect x="430" y="240" width="55" height="50" rx="4" fill="#d6e0ed" opacity="0.2"/>
+              <rect x="30" y="340" width="60" height="50" rx="4" fill="#d6e0ed" opacity="0.2"/>
+              <rect x="240" y="340" width="50" height="50" rx="4" fill="#d6e0ed" opacity="0.25"/>
+              <rect x="430" y="340" width="55" height="50" rx="4" fill="#d6e0ed" opacity="0.3"/>
+              <!-- Green spaces -->
+              <rect x="340" y="440" width="60" height="50" rx="6" fill="#d4e8d0" opacity="0.4"/>
+              <rect x="30" y="440" width="60" height="50" rx="6" fill="#d4e8d0" opacity="0.3"/>
+              <!-- Route line (ambulance path) -->
+              <polyline id="ambulanceRoute" points="412,420 412,400 412,300 412,200 400,200 300,200 300,200 300,150 300,112 300,100 312,100 312,50" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="12,6" opacity="0.7"/>
+              <!-- Incident marker -->
+              <g id="incidentMarker" transform="translate(412, 420)">
+                <circle r="18" fill="#dc2626" opacity="0.15">
+                  <animate attributeName="r" values="16;22;16" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle r="10" fill="#dc2626"/>
+                <text y="4" text-anchor="middle" font-size="12" fill="white" font-weight="700">!</text>
+              </g>
+              <!-- Hospital -->
+              <g id="hospitalMarker" transform="translate(312, 50)">
+                <rect x="-14" y="-14" width="28" height="28" rx="5" fill="#059669"/>
+                <text y="5" text-anchor="middle" font-size="14" fill="white" font-weight="700" font-family="system-ui">H</text>
+              </g>
+              <!-- Ambulance (animated) -->
+              <g id="ambulanceMarker" transform="translate(412, 420)">
+                <circle r="14" fill="#3b82f6" opacity="0.2">
+                  <animate attributeName="r" values="14;20;14" dur="1.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle r="10" fill="#3b82f6"/>
+                <text y="4" text-anchor="middle" font-size="9" fill="white" font-weight="700">+</text>
+              </g>
+            </svg>
+            <div class="scenario__map-label">DEMO — Animated response simulation</div>
+          </div>
+          <button class="btn btn--primary scenario__play-btn" id="playScenario">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+            Play Scenario
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- TECHNOLOGY -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section technology" id="technology" data-animate="fade-up">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Tech Stack</span>
+        <h2 class="section__title">Technology Architecture</h2>
+        <p class="section__subtitle">Built with modern, reliable technologies chosen for scalability, performance and maintainability.</p>
+      </div>
+      <div class="tech__diagram">
+        <div class="tech__row">
+          <div class="tech__box tech__box--frontend">
+            <div class="tech__box-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h4 class="tech__box-title">Frontend</h4>
+            <p class="tech__box-stack">React</p>
+            <p class="tech__box-desc">Responsive web application with component-based architecture</p>
+          </div>
+          <div class="tech__box tech__box--backend">
+            <div class="tech__box-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><circle cx="6" cy="6" r="1"/><circle cx="6" cy="18" r="1"/></svg>
+            </div>
+            <h4 class="tech__box-title">Backend</h4>
+            <p class="tech__box-stack">Django / REST API</p>
+            <p class="tech__box-desc">Scalable API layer with Django REST Framework</p>
+          </div>
+          <div class="tech__box tech__box--database">
+            <div class="tech__box-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h4 class="tech__box-title">Database</h4>
+            <p class="tech__box-stack">PostgreSQL</p>
+            <p class="tech__box-desc">Relational database for emergency data and analytics</p>
+          </div>
+        </div>
+        <div class="tech__connections">
+          <svg viewBox="0 0 800 40" preserveAspectRatio="none" class="tech__conn-svg">
+            <line x1="133" y1="0" x2="133" y2="40" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+            <line x1="400" y1="0" x2="400" y2="40" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+            <line x1="667" y1="0" x2="667" y2="40" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+            <line x1="0" y1="20" x2="800" y2="20" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4"/>
+          </svg>
+        </div>
+        <div class="tech__row">
+          <div class="tech__box tech__box--ai">
+            <div class="tech__box-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <h4 class="tech__box-title">AI / ML</h4>
+            <p class="tech__box-stack">TensorFlow Lite</p>
+            <p class="tech__box-desc">On-device inference for driver monitoring and route optimization</p>
+          </div>
+          <div class="tech__box tech__box--maps">
+            <div class="tech__box-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            </div>
+            <h4 class="tech__box-title">Maps</h4>
+            <p class="tech__box-stack">Leaflet / OpenStreetMap</p>
+            <p class="tech__box-desc">Open-source mapping with custom emergency overlays</p>
+          </div>
+          <div class="tech__box tech__box--network">
+            <div class="tech__box-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+            </div>
+            <h4 class="tech__box-title">Emergency Network</h4>
+            <p class="tech__box-stack">WebSocket / Push</p>
+            <p class="tech__box-desc">Real-time bidirectional communication for live updates</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- RESEARCH -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section research" id="research" data-animate="fade-up">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Academic Foundation</span>
+        <h2 class="section__title">From Prototype to Emergency Infrastructure</h2>
+        <p class="section__subtitle">EMERO is grounded in research methodology, field data and systematic evaluation.</p>
+      </div>
+      <div class="research__grid">
+        <div class="research-card">
+          <div class="research-card__num">01</div>
+          <h3 class="research-card__title">Research Problem</h3>
+          <p class="research-card__text">How can modern technology improve coordination between citizens, emergency vehicles, hospitals and responders to reduce emergency response delays?</p>
+        </div>
+        <div class="research-card">
+          <div class="research-card__num">02</div>
+          <h3 class="research-card__title">Methodology</h3>
+          <p class="research-card__text">Mixed-methods research combining quantitative response-time analysis with qualitative surveys of emergency responders, hospital staff and citizens.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-card__num">03</div>
+          <h3 class="research-card__title">Field Survey</h3>
+          <p class="research-card__text">Primary data collection from emergency response stakeholders, including ambulance drivers, hospital administrators and daily commuters.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-card__num">04</div>
+          <h3 class="research-card__title">System Architecture</h3>
+          <p class="research-card__text">Design of a multi-stakeholder platform architecture that connects all emergency response participants through shared real-time data.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-card__num">05</div>
+          <h3 class="research-card__title">Prototype</h3>
+          <p class="research-card__text">Development of a functional prototype implementing core features: emergency reporting, vehicle tracking, hospital coordination and driver alerts.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-card__num">06</div>
+          <h3 class="research-card__title">Results</h3>
+          <p class="research-card__text">Evaluation of prototype usability, response coordination improvements and stakeholder feedback analysis from controlled testing scenarios.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-card__num">07</div>
+          <h3 class="research-card__title">Future Work</h3>
+          <p class="research-card__text">Expansion toward real-world deployment testing, advanced AI model training, hospital system integration and multi-city scaling studies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- WHY EMERO -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section why-emero" data-animate="fade-up">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Value Proposition</span>
+        <h2 class="section__title">Why EMERO</h2>
+      </div>
+      <div class="why-emero__grid">
+        <div class="why-card">
+          <div class="why-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="24" r="6" stroke="#1e40af" stroke-width="2"/>
+              <circle cx="36" cy="12" r="6" stroke="#1e40af" stroke-width="2"/>
+              <circle cx="36" cy="36" r="6" stroke="#1e40af" stroke-width="2"/>
+              <line x1="17" y1="21" x2="31" y2="14" stroke="#1e40af" stroke-width="1.5" stroke-dasharray="3,2"/>
+              <line x1="17" y1="27" x2="31" y2="34" stroke="#1e40af" stroke-width="1.5" stroke-dasharray="3,2"/>
+              <line x1="36" y1="18" x2="36" y2="30" stroke="#1e40af" stroke-width="1.5" stroke-dasharray="3,2"/>
+            </svg>
+          </div>
+          <h3 class="why-card__title">One Connected Response Network</h3>
+          <p class="why-card__text">Every participant in the emergency chain — citizen, vehicle, hospital, responder — connected through a single platform. No more fragmented communication, no more information gaps between critical stakeholders.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="18" stroke="#1e40af" stroke-width="2"/>
+              <line x1="24" y1="24" x2="24" y2="14" stroke="#1e40af" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="24" y1="24" x2="32" y2="28" stroke="#1e40af" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="2.5" fill="#1e40af"/>
+            </svg>
+          </div>
+          <h3 class="why-card__title">Real-Time Information</h3>
+          <p class="why-card__text">Live location tracking, instant alerts, real-time ETA updates and immediate hospital notifications. Information flows as fast as the emergency itself, ensuring no participant is operating on outdated data.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="28" width="6" height="12" rx="1" stroke="#1e40af" stroke-width="2"/>
+              <rect x="17" y="20" width="6" height="20" rx="1" stroke="#1e40af" stroke-width="2"/>
+              <rect x="26" y="12" width="6" height="28" rx="1" stroke="#1e40af" stroke-width="2"/>
+              <rect x="35" y="8" width="6" height="32" rx="1" stroke="#1e40af" stroke-width="2"/>
+              <line x1="8" y1="6" x2="42" y2="6" stroke="#1e40af" stroke-width="1.5" stroke-dasharray="3,2"/>
+            </svg>
+          </div>
+          <h3 class="why-card__title">Data-Driven Improvement</h3>
+          <p class="why-card__text">Aggregated anonymized data reveals patterns in emergency frequency, response times and coordination efficiency. Each incident contributes to a growing knowledge base that supports evidence-based improvements to emergency infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ABOUT -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section about" id="about" data-animate="fade-up">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__content">
+          <span class="section__label">About EMERO</span>
+          <h2 class="section__title">A Student-Led Research Initiative</h2>
+          <p class="about__text">EMERO is a student-led research and prototype project focused on improving emergency-response coordination. It explores how modern technology — real-time communication, location intelligence, AI-assisted decision support and cross-stakeholder data sharing — can connect the currently fragmented emergency response ecosystem.</p>
+          <p class="about__text">The project encompasses original research, field surveys, system design, prototype development and evaluation. It aims to demonstrate how a connected emergency-response platform could support faster, better-coordinated responses when every second matters.</p>
+          <p class="about__text about__text--note">EMERO is a research prototype, not a production emergency service. It is designed for academic study, technology demonstration and competitive presentation.</p>
+        </div>
+        <div class="about__timeline-wrap">
+          <h3 class="about__timeline-title">Project Timeline</h3>
+          <div class="about__timeline">
+            <div class="about__timeline-item">
+              <div class="about__timeline-dot"></div>
+              <div class="about__timeline-content">
+                <span class="about__timeline-date">Phase 1</span>
+                <span class="about__timeline-label">Research & Survey</span>
+              </div>
+            </div>
+            <div class="about__timeline-item">
+              <div class="about__timeline-dot"></div>
+              <div class="about__timeline-content">
+                <span class="about__timeline-date">Phase 2</span>
+                <span class="about__timeline-label">System Architecture</span>
+              </div>
+            </div>
+            <div class="about__timeline-item">
+              <div class="about__timeline-dot"></div>
+              <div class="about__timeline-content">
+                <span class="about__timeline-date">Phase 3</span>
+                <span class="about__timeline-label">Prototype Development</span>
+              </div>
+            </div>
+            <div class="about__timeline-item about__timeline-item--active">
+              <div class="about__timeline-dot"></div>
+              <div class="about__timeline-content">
+                <span class="about__timeline-date">Phase 4</span>
+                <span class="about__timeline-label">Evaluation & Presentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- MEET THE CREATOR -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="section creator" id="creator" data-animate="fade-up">
+    <div class="container">
+      <div class="creator__card">
+        <div class="creator__content">
+          <span class="section__label">Meet the Creator</span>
+          <h2 class="section__title" style="text-align:left">Behind EMERO</h2>
+          <p class="creator__text">EMERO was conceived, researched and developed by <strong>Krishnabhadran K</strong> — a student-led initiative exploring how modern technology can improve emergency-response coordination between citizens, vehicles, hospitals and responders.</p>
+          <p class="creator__text">From initial research and field surveys to system architecture and prototype development, EMERO represents a comprehensive exploration of connected emergency infrastructure.</p>
+          <a href="https://krishnabhadran.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--lg creator__link">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 00-5.656 0l-3-3a2 2 0 112.828-2.828l3 3a1 1 0 001.414 0 2 2 0 000-2.828zM5.414 10.586a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a2 2 0 102.828 2.828l3-3a2 2 0 000-2.828z" clip-rule="evenodd"/></svg>
+            Visit Personal Website
+          </a>
+        </div>
+        <div class="creator__avatar">
+          <div class="creator__avatar-circle">
+            <span class="creator__avatar-initials">KK</span>
+          </div>
+          <p class="creator__name">Krishnabhadran K</p>
+          <p class="creator__role">Concept, Research & Development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo">
+            <span class="nav__logo-mark">E</span>
+            <span class="nav__logo-text">EMERO</span>
+          </a>
+          <p class="footer__tagline">Intelligent Emergency Response</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Platform</h4>
+            <a href="#how-it-works" class="footer__link">How It Works</a>
+            <a href="#features" class="footer__link">Features</a>
+            <a href="#network" class="footer__link">Emergency Network</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Resources</h4>
+            <a href="#technology" class="footer__link">Technology</a>
+            <a href="#research" class="footer__link">Research</a>
+            <a href="#about" class="footer__link">About</a>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Connect</h4>
+            <a href="mailto:contact@emero.dev" class="footer__link">Contact</a>
+            <a href="https://github.com/KrishnaBhadran" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__credit">Concept, Research &amp; Development — <a href="https://krishnabhadran.github.io/" target="_blank" rel="noopener noreferrer" class="footer__credit-link">Krishnabhadran K</a></p>
+        <p class="footer__disclaimer">EMERO is currently a research/prototype platform and is not a replacement for official emergency services.</p>
+        <p class="footer__copyright">&copy; 2026 EMERO. Research Prototype Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+  </button>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
